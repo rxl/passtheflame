@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		94E7E08614DB32EF00FA3BA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E7E08514DB32EF00FA3BA4 /* UIKit.framework */; };
+		94E7E08814DB32EF00FA3BA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E7E08714DB32EF00FA3BA4 /* Foundation.framework */; };
+		94E7E08A14DB32EF00FA3BA4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E7E08914DB32EF00FA3BA4 /* CoreGraphics.framework */; };
+		94E7E09014DB32EF00FA3BA4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94E7E08E14DB32EF00FA3BA4 /* InfoPlist.strings */; };
+		94E7E09214DB32EF00FA3BA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E7E09114DB32EF00FA3BA4 /* main.m */; };
+		94E7E09614DB32EF00FA3BA4 /* PassTheTorchAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E7E09514DB32EF00FA3BA4 /* PassTheTorchAppDelegate.m */; };
+		94E7E09914DB32EF00FA3BA4 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E7E09714DB32EF00FA3BA4 /* MainStoryboard.storyboard */; };
+		94E7E09C14DB32EF00FA3BA4 /* PassTheTorchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E7E09B14DB32EF00FA3BA4 /* PassTheTorchViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		94E7E08114DB32EF00FA3BA4 /* PassTheTorch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassTheTorch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94E7E08514DB32EF00FA3BA4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		94E7E08714DB32EF00FA3BA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		94E7E08914DB32EF00FA3BA4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		94E7E08D14DB32EF00FA3BA4 /* PassTheTorch-Info.plist */ = {isa = PBXFileReference; path = "PassTheTorch-Info.plist"; sourceTree = "<group>"; };
+		94E7E08F14DB32EF00FA3BA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		94E7E09114DB32EF00FA3BA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		94E7E09314DB32EF00FA3BA4 /* PassTheTorch-Prefix.pch */ = {isa = PBXFileReference; path = "PassTheTorch-Prefix.pch"; sourceTree = "<group>"; };
+		94E7E09414DB32EF00FA3BA4 /* PassTheTorchAppDelegate.h */ = {isa = PBXFileReference; path = PassTheTorchAppDelegate.h; sourceTree = "<group>"; };
+		94E7E09514DB32EF00FA3BA4 /* PassTheTorchAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PassTheTorchAppDelegate.m; sourceTree = "<group>"; };
+		94E7E09814DB32EF00FA3BA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		94E7E09A14DB32EF00FA3BA4 /* PassTheTorchViewController.h */ = {isa = PBXFileReference; path = PassTheTorchViewController.h; sourceTree = "<group>"; };
+		94E7E09B14DB32EF00FA3BA4 /* PassTheTorchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PassTheTorchViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94E7E07E14DB32EF00FA3BA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94E7E08614DB32EF00FA3BA4 /* UIKit.framework in Frameworks */,
+				94E7E08814DB32EF00FA3BA4 /* Foundation.framework in Frameworks */,
+				94E7E08A14DB32EF00FA3BA4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94E7E07614DB32EF00FA3BA4 = {
+			isa = PBXGroup;
+			children = (
+				94E7E08B14DB32EF00FA3BA4 /* PassTheTorch */,
+				94E7E08414DB32EF00FA3BA4 /* Frameworks */,
+				94E7E08214DB32EF00FA3BA4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94E7E08214DB32EF00FA3BA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94E7E08114DB32EF00FA3BA4 /* PassTheTorch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94E7E08414DB32EF00FA3BA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94E7E08514DB32EF00FA3BA4 /* UIKit.framework */,
+				94E7E08714DB32EF00FA3BA4 /* Foundation.framework */,
+				94E7E08914DB32EF00FA3BA4 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94E7E08B14DB32EF00FA3BA4 /* PassTheTorch */ = {
+			isa = PBXGroup;
+			children = (
+				94E7E09414DB32EF00FA3BA4 /* PassTheTorchAppDelegate.h */,
+				94E7E09514DB32EF00FA3BA4 /* PassTheTorchAppDelegate.m */,
+				94E7E09714DB32EF00FA3BA4 /* MainStoryboard.storyboard */,
+				94E7E09A14DB32EF00FA3BA4 /* PassTheTorchViewController.h */,
+				94E7E09B14DB32EF00FA3BA4 /* PassTheTorchViewController.m */,
+				94E7E08C14DB32EF00FA3BA4 /* Supporting Files */,
+			);
+			path = PassTheTorch;
+			sourceTree = "<group>";
+		};
+		94E7E08C14DB32EF00FA3BA4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				94E7E08D14DB32EF00FA3BA4 /* PassTheTorch-Info.plist */,
+				94E7E08E14DB32EF00FA3BA4 /* InfoPlist.strings */,
+				94E7E09114DB32EF00FA3BA4 /* main.m */,
+				94E7E09314DB32EF00FA3BA4 /* PassTheTorch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94E7E08014DB32EF00FA3BA4 /* PassTheTorch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94E7E09F14DB32EF00FA3BA4 /* Build configuration list for PBXNativeTarget "PassTheTorch" */;
+			buildPhases = (
+				94E7E07D14DB32EF00FA3BA4 /* Sources */,
+				94E7E07E14DB32EF00FA3BA4 /* Frameworks */,
+				94E7E07F14DB32EF00FA3BA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PassTheTorch;
+			productName = PassTheTorch;
+			productReference = 94E7E08114DB32EF00FA3BA4 /* PassTheTorch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94E7E07814DB32EF00FA3BA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = Princeton;
+			};
+			buildConfigurationList = 94E7E07B14DB32EF00FA3BA4 /* Build configuration list for PBXProject "PassTheTorch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 94E7E07614DB32EF00FA3BA4;
+			productRefGroup = 94E7E08214DB32EF00FA3BA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94E7E08014DB32EF00FA3BA4 /* PassTheTorch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94E7E07F14DB32EF00FA3BA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94E7E09014DB32EF00FA3BA4 /* InfoPlist.strings in Resources */,
+				94E7E09914DB32EF00FA3BA4 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94E7E07D14DB32EF00FA3BA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94E7E09214DB32EF00FA3BA4 /* main.m in Sources */,
+				94E7E09614DB32EF00FA3BA4 /* PassTheTorchAppDelegate.m in Sources */,
+				94E7E09C14DB32EF00FA3BA4 /* PassTheTorchViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		94E7E08E14DB32EF00FA3BA4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94E7E08F14DB32EF00FA3BA4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		94E7E09714DB32EF00FA3BA4 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94E7E09814DB32EF00FA3BA4 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94E7E09D14DB32EF00FA3BA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		94E7E09E14DB32EF00FA3BA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94E7E0A014DB32EF00FA3BA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PassTheTorch/PassTheTorch-Prefix.pch";
+				INFOPLIST_FILE = "PassTheTorch/PassTheTorch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		94E7E0A114DB32EF00FA3BA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PassTheTorch/PassTheTorch-Prefix.pch";
+				INFOPLIST_FILE = "PassTheTorch/PassTheTorch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94E7E07B14DB32EF00FA3BA4 /* Build configuration list for PBXProject "PassTheTorch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94E7E09D14DB32EF00FA3BA4 /* Debug */,
+				94E7E09E14DB32EF00FA3BA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94E7E09F14DB32EF00FA3BA4 /* Build configuration list for PBXNativeTarget "PassTheTorch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94E7E0A014DB32EF00FA3BA4 /* Debug */,
+				94E7E0A114DB32EF00FA3BA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94E7E07814DB32EF00FA3BA4 /* Project object */;
+}

@@ -7,54 +7,69 @@
 //
 
 #import "PassTheTorchViewController.h"
+#import "TorchView.h"
+#import "HeadquartersViewController.h"
+
+@interface PassTheTorchViewController() <TorchViewDataSource>
+@property (nonatomic, weak) IBOutlet TorchView *torchView;
+@end
 
 @implementation PassTheTorchViewController
 
-- (void)didReceiveMemoryWarning
+@synthesize flameIntensity = _flameIntensity;
+@synthesize torchView = _torchView;
+
+- (void)showHeadquartersView
 {
-    [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
+    [self performSegueWithIdentifier:@"ShowHeadquarters" sender:self];
+    /*if (self.flameIntensity > 0) {
+        [self performSegueWithIdentifier:@"ShowHeadquartersForFlamePossesser" sender:self];
+    } else {
+        [self performSegueWithIdentifier:@"ShowHeadquartersForNonFlamePossessor" sender:self];
+    }*/
 }
 
-#pragma mark - View lifecycle
-
-- (void)viewDidLoad
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    if ([segue.identifier isEqualToString:@"ShowHeadquarters"]) {
+        if (self.flameIntensity > 0) {
+            [segue.destinationViewController setHasFlame:YES];
+        } else {
+            [segue.destinationViewController setHasFlame:NO];
+        }
+    }
+    
+    /*if ([segue.identifier isEqualToString:@"ShowHeadquartersForFlamePossessor"]) {
+        [segue.destinationViewController setHasFlame:YES];
+    } else if ([segue.identifier isEqualToString:@"ShowHeadquartersForNonFlamePossessor"]) {
+        [segue.destinationViewController setHasFlame:NO];
+    }*/
 }
 
-- (void)viewDidUnload
+
+- (void)setFlameIntensity:(int)flameIntensity
 {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+    _flameIntensity = flameIntensity;
+    [self.torchView setNeedsDisplay];
 }
 
-- (void)viewWillAppear:(BOOL)animated
+- (void)setTorchView:(TorchView *)torchView
 {
-    [super viewWillAppear:animated];
+    _torchView = torchView;
+    
+    self.torchView.dataSource = self;
 }
 
-- (void)viewDidAppear:(BOOL)animated
+- (float)flameForTorchView:(TorchView *)sender
 {
-    [super viewDidAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-	[super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-	[super viewDidDisappear:animated];
+    return (self.flameIntensity / 100.0);
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    //return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    return NO;
 }
 
 @end

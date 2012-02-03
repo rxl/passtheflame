@@ -10,4 +10,6 @@
 
 @interface PassTheTorchViewController : UIViewController
 
+@property (nonatomic) int flameIntensity; // 0 is out, 100 is full flame
+
 @end

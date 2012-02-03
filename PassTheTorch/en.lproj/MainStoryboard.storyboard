@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1906" systemVersion="11A511" targetRuntime="iOS.CocoaTouch" nextObjectID="6" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11C74" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="gWg-mX-EIL">
     <dependencies>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="902"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
     </dependencies>
     <scenes>
         <scene sceneID="5">
@@ -10,15 +10,156 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
                 <viewController id="2" customClass="PassTheTorchViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="flh-eR-bKj" customClass="TorchView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7G0-cf-aqa">
+                                        <rect key="frame" x="228" y="359" width="72" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="i">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="n60-Qe-kf4" kind="push" id="wJD-dj-JeC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Flame" id="2gd-pk-JUp"/>
+                    <connections>
+                        <outlet property="torchView" destination="flh-eR-bKj" id="5nm-q2-nuW"/>
+                    </connections>
                 </viewController>
             </objects>
+            <point key="canvasLocation" x="-364" y="240"/>
+        </scene>
+        <scene sceneID="coY-Pe-loZ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VeD-p4-xPM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="n60-Qe-kf4" customClass="HeadquartersViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dU9-iW-uu2" customClass="HeadquartersView">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Headquarters" id="z1s-W2-6ci"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="123" y="-6"/>
+        </scene>
+        <scene sceneID="hsr-1V-vDr">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lUx-aR-lmo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="tFU-o5-0z0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UTk-5S-fEo">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Exchange" id="QCH-Bb-szW"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="504" y="528"/>
+        </scene>
+        <scene sceneID="faq-6W-rI6">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SBL-U7-cLc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="5AY-IV-dTV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gos-Mh-5gu">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Purchase" id="Kmx-gi-XPp"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="512" y="-45"/>
+        </scene>
+        <scene sceneID="Jli-D0-Sdn">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ztJ-Wg-kTm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="aiu-q6-lui" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AMd-qZ-66s">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Customize Flame" id="s18-OQ-WJJ"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="504" y="-609"/>
+        </scene>
+        <scene sceneID="bul-sf-Yc9">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZGF-fW-Tvx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="gWg-mX-EIL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="K3B-6Q-Cjn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="cU8-OF-yKw"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-869" y="250"/>
+        </scene>
+        <scene sceneID="Shk-s5-KWF">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FHj-4s-Qka" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="aVg-eu-DqA" customClass="HeadquartersViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Bs-3g-c7L" customClass="HeadquartersView">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Headquarters" id="bGd-Al-F0x"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="123" y="580"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="HeadquartersView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HeadquartersView.h"/>
+            <relationships>
+                <relationship kind="outlet" name="dataSource"/>
+            </relationships>
+        </class>
+        <class className="HeadquartersViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HeadquartersViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="headquartersView" candidateClass="HeadquartersView"/>
+            </relationships>
+        </class>
+        <class className="PassTheTorchViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PassTheTorchViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="torchView" candidateClass="TorchView"/>
+            </relationships>
+        </class>
+        <class className="TorchView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TorchView.h"/>
+            <relationships>
+                <relationship kind="outlet" name="dataSource"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

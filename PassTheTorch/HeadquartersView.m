@@ -14,6 +14,7 @@
 
 - (void)setup
 {
+    self.backgroundColor = [UIColor blackColor];
     self.contentMode = UIViewContentModeRedraw;
 }
 
@@ -30,6 +31,8 @@
     }
     return self;
 }
+
+/*
 
 - (void)drawCircleAtPoint:(CGPoint)p withRadius:(CGFloat)radius inContext:(CGContextRef)context
 {
@@ -98,7 +101,7 @@
     CGContextMoveToPoint(context, mouthStart.x, mouthStart.y);
     CGContextAddCurveToPoint(context, mouthCP1.x, mouthCP1.y, mouthCP2.x, mouthCP2.y, mouthEnd.x, mouthEnd.y);
     CGContextStrokePath(context);
-}
+}*/
 
 
 @end

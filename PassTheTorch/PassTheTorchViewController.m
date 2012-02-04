@@ -42,7 +42,7 @@
             [segue.destinationViewController setHasFlame:NO];
         }
     }
-    
+    //[self.navigationController setNavigationBarHidden:NO animated:NO];
     /*if ([segue.identifier isEqualToString:@"ShowHeadquartersForFlamePossessor"]) {
         [segue.destinationViewController setHasFlame:YES];
     } else if ([segue.identifier isEqualToString:@"ShowHeadquartersForNonFlamePossessor"]) {
@@ -95,7 +95,7 @@
     // problem is it's already in the view, so it seems like it's added twice
     [self.torchView addSubview:self.torchButton];
     
-    [self.navigationController setNavigationBarHidden:YES animated:NO];
+    //[self.navigationController setNavigationBarHidden:YES animated:NO];
 }
 
 - (void)viewDidUnload {

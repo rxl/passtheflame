@@ -50,7 +50,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="508" y="983"/>
+            <point key="canvasLocation" x="-104" y="535"/>
         </scene>
         <scene sceneID="coY-Pe-loZ">
             <objects>
@@ -139,6 +139,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="2" kind="modal" modalTransitionStyle="flipHorizontal" id="F1v-U1-pgs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -177,7 +180,7 @@
                     <navigationItem key="navigationItem" title="Purchase Flame" id="Kmx-gi-XPp"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2148" y="-8"/>
+            <point key="canvasLocation" x="1842" y="22"/>
         </scene>
         <scene sceneID="Jli-D0-Sdn">
             <objects>
@@ -205,6 +208,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="2" kind="modal" modalTransitionStyle="flipHorizontal" id="WKd-a4-gzW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -212,7 +218,7 @@
                     <navigationItem key="navigationItem" title="Customize Flame" id="s18-OQ-WJJ"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2100" y="-697"/>
+            <point key="canvasLocation" x="1452" y="-669"/>
         </scene>
         <scene sceneID="sd7-Ng-2gc">
             <objects>
@@ -268,4 +274,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="WKd-a4-gzW"/>
+    </inferredMetricsTieBreakers>
 </document>

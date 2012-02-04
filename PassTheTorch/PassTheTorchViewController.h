@@ -11,5 +11,7 @@
 @interface PassTheTorchViewController : UIViewController
 
 @property (nonatomic) int flameIntensity; // 0 is out, 100 is full flame
+@property (weak, nonatomic) IBOutlet UIImageView *torchImageView;
+@property (weak, nonatomic) IBOutlet UIButton *torchButton;
 
 @end

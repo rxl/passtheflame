@@ -42,16 +42,16 @@
 
 #define DEFAULT_SCALE 0.90
 
-/*
- - (void)drawRect:(CGRect)rect
- {
- CGContextRef context = UIGraphicsGetCurrentContext();
- float flameSize = [self.dataSource flameForTorchView:self];
- if (flameSize < 0) flameSize = 0;
- if (flameSize > 1) flameSize = 1;
- }
- */
 
+- (void)drawRect:(CGRect)rect
+{
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    float flameSize = [self.dataSource flameForTorchView:self];
+    if (flameSize < 0) flameSize = 0;
+    if (flameSize > 1) flameSize = 1;
+}
+ 
+/*
 - (void)drawRect:(CGRect)rect
 {
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -109,5 +109,6 @@
     CGContextAddCurveToPoint(context, mouthCP1.x, mouthCP1.y, mouthCP2.x, mouthCP2.y, mouthEnd.x, mouthEnd.y);
     CGContextStrokePath(context);
 }
+*/
 
 @end

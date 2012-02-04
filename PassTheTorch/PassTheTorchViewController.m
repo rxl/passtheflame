@@ -9,12 +9,16 @@
 #import "PassTheTorchViewController.h"
 #import "TorchView.h"
 #import "HeadquartersViewController.h"
+#import <QuartzCore/QuartzCore.h>
+#import "FlameLayer.h"
 
 @interface PassTheTorchViewController() <TorchViewDataSource>
 @property (nonatomic, weak) IBOutlet TorchView *torchView;
 @end
 
 @implementation PassTheTorchViewController
+@synthesize torchImageView = _torchImageView;
+@synthesize torchButton = _torchButton;
 
 @synthesize flameIntensity = _flameIntensity;
 @synthesize torchView = _torchView;
@@ -72,4 +76,31 @@
     return NO;
 }
 
+- (void)viewDidLoad
+{
+    // make background black
+    self.torchView.backgroundColor = [UIColor blackColor];
+
+    // add flame
+    FlameLayer *flame = [[FlameLayer alloc] initWithFrame:self.view.frame];
+    [self.torchView addSubview:flame];
+    
+    // add front of torch
+    UIImageView *torch_front = [[UIImageView alloc] initWithFrame:self.torchImageView.frame];
+    torch_front.image = [UIImage imageNamed:@"london_transparent_front.png"];
+    torch_front.layer.zPosition = 2;
+    [self.torchView addSubview:torch_front];
+
+    // hack to make the torchbutton work... otherwise it's inactive
+    // problem is it's already in the view, so it seems like it's added twice
+    [self.torchView addSubview:self.torchButton];
+    
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
+}
+
+- (void)viewDidUnload {
+    [self setTorchImageView:nil];
+    [self setTorchButton:nil];
+    [super viewDidUnload];
+}
 @end

@@ -18,11 +18,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="london_transparent.png" id="kkH-Q0-Ovo">
-                                        <rect key="frame" x="-29" y="171" width="378" height="413"/>
+                                        <rect key="frame" x="-29" y="188" width="378" height="413"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="7G0-cf-aqa">
-                                        <rect key="frame" x="282" y="377" width="18" height="19"/>
+                                        <rect key="frame" x="282" y="421" width="18" height="19"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal">
@@ -87,7 +87,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="tFU-o5-0z0" kind="push" identifier="Pass Flame" id="2VL-7e-LqV"/>
+                                    <action selector="pressReceiveFlame:" destination="n60-Qe-kf4" eventType="touchUpInside" id="hiL-Fo-wie"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Oh no... it looks like you don't have a flame. Purchase one or receive one from a friend to light your torch." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" minimumFontSize="10" id="Z8U-yR-NwV">
@@ -109,13 +109,16 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="2" kind="modal" modalTransitionStyle="flipHorizontal" id="N8A-qM-qZI"/>
+                                    <segue destination="2" kind="modal" identifier="fromHQToTorch" modalTransitionStyle="flipHorizontal" id="N8A-qM-qZI"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Headquarters" id="z1s-W2-6ci"/>
+                    <connections>
+                        <outlet property="passFlameButton" destination="0uH-RU-NWU" id="cNQ-eY-SJG"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1246" y="275"/>
@@ -125,7 +128,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lUx-aR-lmo" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="tFU-o5-0z0" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UTk-5S-fEo">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mwk-aV-cBZ">
@@ -146,7 +149,7 @@
                     <navigationItem key="navigationItem" title="Pass Flame" id="QCH-Bb-szW"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1628" y="843"/>
+            <point key="canvasLocation" x="1744" y="651"/>
         </scene>
         <scene sceneID="faq-6W-rI6">
             <objects>
@@ -246,6 +249,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HeadquartersViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="headquartersView" candidateClass="HeadquartersView"/>
+                <relationship kind="outlet" name="passFlameButton" candidateClass="UIButton"/>
             </relationships>
         </class>
         <class className="PassTheTorchViewController" superclassName="UIViewController">

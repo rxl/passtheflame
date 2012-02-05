@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E14FBE614DDC1DC00037720 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E14FBE514DDC1DC00037720 /* libsqlite3.dylib */; };
+		0E14FBE814DDC1E800037720 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E14FBE714DDC1E800037720 /* AudioToolbox.framework */; };
+		0E14FBEA14DDC1F000037720 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E14FBE914DDC1F000037720 /* CoreLocation.framework */; };
+		0E14FBF614DE3FD100037720 /* BumpAPIAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0E14FBF014DE3FD100037720 /* BumpAPIAssets.bundle */; };
+		0E14FBF714DE3FD100037720 /* BumpConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E14FBF314DE3FD100037720 /* BumpConnector.m */; };
+		0E14FBF814DE3FD100037720 /* libBumpAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E14FBF514DE3FD100037720 /* libBumpAPI.a */; };
 		0E8A260114DCF1D20021C47B /* fire_particle_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E8A25FD14DCF1D20021C47B /* fire_particle_large.png */; };
 		0E8A260214DCF1D20021C47B /* fire_particle.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E8A25FE14DCF1D20021C47B /* fire_particle.png */; };
 		0E8A260314DCF1D20021C47B /* london_transparent_front.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E8A25FF14DCF1D20021C47B /* london_transparent_front.png */; };
@@ -28,6 +34,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E14FBE314DDC1D100037720 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		0E14FBE514DDC1DC00037720 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		0E14FBE714DDC1E800037720 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0E14FBE914DDC1F000037720 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0E14FBEF14DE3FD100037720 /* BumpAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BumpAPI.h; path = PassTheTorch/BumpAPI.h; sourceTree = "<group>"; };
+		0E14FBF014DE3FD100037720 /* BumpAPIAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = BumpAPIAssets.bundle; path = PassTheTorch/BumpAPIAssets.bundle; sourceTree = "<group>"; };
+		0E14FBF114DE3FD100037720 /* BumpAPICustomUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BumpAPICustomUI.h; path = PassTheTorch/BumpAPICustomUI.h; sourceTree = "<group>"; };
+		0E14FBF214DE3FD100037720 /* BumpConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BumpConnector.h; path = PassTheTorch/BumpConnector.h; sourceTree = "<group>"; };
+		0E14FBF314DE3FD100037720 /* BumpConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BumpConnector.m; path = PassTheTorch/BumpConnector.m; sourceTree = "<group>"; };
+		0E14FBF414DE3FD100037720 /* Bumper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bumper.h; path = PassTheTorch/Bumper.h; sourceTree = "<group>"; };
+		0E14FBF514DE3FD100037720 /* libBumpAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBumpAPI.a; path = PassTheTorch/libBumpAPI.a; sourceTree = "<group>"; };
 		0E8A25FD14DCF1D20021C47B /* fire_particle_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire_particle_large.png; sourceTree = "<group>"; };
 		0E8A25FE14DCF1D20021C47B /* fire_particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire_particle.png; sourceTree = "<group>"; };
 		0E8A25FF14DCF1D20021C47B /* london_transparent_front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = london_transparent_front.png; sourceTree = "<group>"; };
@@ -62,16 +79,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E14FBEA14DDC1F000037720 /* CoreLocation.framework in Frameworks */,
+				0E14FBE814DDC1E800037720 /* AudioToolbox.framework in Frameworks */,
+				0E14FBE614DDC1DC00037720 /* libsqlite3.dylib in Frameworks */,
 				0E8A260914DCF5960021C47B /* QuartzCore.framework in Frameworks */,
 				94E7E08614DB32EF00FA3BA4 /* UIKit.framework in Frameworks */,
 				94E7E08814DB32EF00FA3BA4 /* Foundation.framework in Frameworks */,
 				94E7E08A14DB32EF00FA3BA4 /* CoreGraphics.framework in Frameworks */,
+				0E14FBF814DE3FD100037720 /* libBumpAPI.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E14FBDB14DDC18F00037720 /* BumpAPI */ = {
+			isa = PBXGroup;
+			children = (
+				0E14FBEF14DE3FD100037720 /* BumpAPI.h */,
+				0E14FBF014DE3FD100037720 /* BumpAPIAssets.bundle */,
+				0E14FBF114DE3FD100037720 /* BumpAPICustomUI.h */,
+				0E14FBF214DE3FD100037720 /* BumpConnector.h */,
+				0E14FBF314DE3FD100037720 /* BumpConnector.m */,
+				0E14FBF414DE3FD100037720 /* Bumper.h */,
+				0E14FBF514DE3FD100037720 /* libBumpAPI.a */,
+			);
+			name = BumpAPI;
+			sourceTree = "<group>";
+		};
 		0E8A25FB14DCF1BA0021C47B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,7 +121,7 @@
 		94E7E07614DB32EF00FA3BA4 = {
 			isa = PBXGroup;
 			children = (
-				0E8A260814DCF5960021C47B /* QuartzCore.framework */,
+				0E14FBDB14DDC18F00037720 /* BumpAPI */,
 				94E7E08B14DB32EF00FA3BA4 /* PassTheTorch */,
 				94E7E08414DB32EF00FA3BA4 /* Frameworks */,
 				94E7E08214DB32EF00FA3BA4 /* Products */,
@@ -104,6 +139,11 @@
 		94E7E08414DB32EF00FA3BA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0E14FBE914DDC1F000037720 /* CoreLocation.framework */,
+				0E14FBE714DDC1E800037720 /* AudioToolbox.framework */,
+				0E14FBE514DDC1DC00037720 /* libsqlite3.dylib */,
+				0E14FBE314DDC1D100037720 /* libsqlite3.0.dylib */,
+				0E8A260814DCF5960021C47B /* QuartzCore.framework */,
 				94E7E08514DB32EF00FA3BA4 /* UIKit.framework */,
 				94E7E08714DB32EF00FA3BA4 /* Foundation.framework */,
 				94E7E08914DB32EF00FA3BA4 /* CoreGraphics.framework */,
@@ -125,11 +165,11 @@
 				94E7E09B14DB32EF00FA3BA4 /* PassTheTorchViewController.m */,
 				94E7E0AD14DB8F2F00FA3BA4 /* HeadquartersView.h */,
 				94E7E0AE14DB8F2F00FA3BA4 /* HeadquartersView.m */,
-				0E8A25FB14DCF1BA0021C47B /* Resources */,
-				94E7E08C14DB32EF00FA3BA4 /* Supporting Files */,
 				94E7E0A814DB8E3A00FA3BA4 /* HeadquartersViewController.h */,
 				94E7E0A914DB8E3A00FA3BA4 /* HeadquartersViewController.m */,
 				94E7E0AA14DB8E3A00FA3BA4 /* HeadquartersViewController.xib */,
+				0E8A25FB14DCF1BA0021C47B /* Resources */,
+				94E7E08C14DB32EF00FA3BA4 /* Supporting Files */,
 			);
 			path = PassTheTorch;
 			sourceTree = "<group>";
@@ -203,6 +243,7 @@
 				0E8A260214DCF1D20021C47B /* fire_particle.png in Resources */,
 				0E8A260314DCF1D20021C47B /* london_transparent_front.png in Resources */,
 				0E8A260414DCF1D20021C47B /* london_transparent.png in Resources */,
+				0E14FBF614DE3FD100037720 /* BumpAPIAssets.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +261,7 @@
 				94E7E0AB14DB8E3A00FA3BA4 /* HeadquartersViewController.m in Sources */,
 				94E7E0AF14DB8F2F00FA3BA4 /* HeadquartersView.m in Sources */,
 				0E8A260714DCF4B80021C47B /* FlameLayer.m in Sources */,
+				0E14FBF714DE3FD100037720 /* BumpConnector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +338,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PassTheTorch/PassTheTorch-Prefix.pch";
 				INFOPLIST_FILE = "PassTheTorch/PassTheTorch-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/PassTheTorch\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -307,6 +354,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PassTheTorch/PassTheTorch-Prefix.pch";
 				INFOPLIST_FILE = "PassTheTorch/PassTheTorch-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/PassTheTorch\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

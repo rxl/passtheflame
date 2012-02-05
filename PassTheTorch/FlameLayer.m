@@ -30,7 +30,7 @@
         fireEmitter.zPosition = 1;
         fireEmitter.emitterMode = kCAGravityBottom;
         fireEmitter.emitterShape = kCAEmitterLayerRectangle;
-        fireEmitter.emitterPosition = CGPointMake(size.width / 2, size.height / 2 - 30 );
+        fireEmitter.emitterPosition = CGPointMake(size.width / 2, size.height / 2 - 10 );
         fireEmitter.emitterSize = CGSizeMake(40, 20);
         fireEmitter.renderMode = kCAEmitterLayerAdditive;
         
@@ -44,8 +44,6 @@
         fire.lifetime = 2.3;
         fire.lifetimeRange = 2.0;//1.85;
         
-        //    fire.
-        
         fire.velocity = 80;
         fire.velocityRange = 80;
         
@@ -54,9 +52,6 @@
         fire.scale = 1.5;
         fire.scaleRange = 0.6;
         fire.scaleSpeed = -0.2;
-        //fire.spin = 0.5;
-        
-        
         
         fire.color = [[UIColor colorWithRed:0.99
                                       green:0.4

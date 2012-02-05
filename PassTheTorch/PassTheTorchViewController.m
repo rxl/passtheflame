@@ -72,8 +72,7 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    //return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-    return NO;
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
 - (void)viewDidLoad
@@ -94,8 +93,6 @@
     // hack to make the torchbutton work... otherwise it's inactive
     // problem is it's already in the view, so it seems like it's added twice
     [self.torchView addSubview:self.torchButton];
-    
-    //[self.navigationController setNavigationBarHidden:YES animated:NO];
 }
 
 - (void)viewDidUnload {

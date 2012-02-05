@@ -14,6 +14,7 @@
 		0E8A260714DCF4B80021C47B /* FlameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8A260614DCF4B70021C47B /* FlameLayer.m */; };
 		0E8A260914DCF5960021C47B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8A260814DCF5960021C47B /* QuartzCore.framework */; };
 		94A228C414DE3A8A00A5AB8C /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A228C314DE3A8A00A5AB8C /* UserData.m */; };
+		94A228C814DE3E7600A5AB8C /* CustomizeFlameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A228C714DE3E7600A5AB8C /* CustomizeFlameViewController.m */; };
 		94E7E08614DB32EF00FA3BA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E7E08514DB32EF00FA3BA4 /* UIKit.framework */; };
 		94E7E08814DB32EF00FA3BA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E7E08714DB32EF00FA3BA4 /* Foundation.framework */; };
 		94E7E08A14DB32EF00FA3BA4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E7E08914DB32EF00FA3BA4 /* CoreGraphics.framework */; };
@@ -37,6 +38,8 @@
 		0E8A260814DCF5960021C47B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		94A228C214DE3A8A00A5AB8C /* UserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
 		94A228C314DE3A8A00A5AB8C /* UserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserData.m; sourceTree = "<group>"; };
+		94A228C614DE3E7600A5AB8C /* CustomizeFlameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizeFlameViewController.h; sourceTree = "<group>"; };
+		94A228C714DE3E7600A5AB8C /* CustomizeFlameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizeFlameViewController.m; sourceTree = "<group>"; };
 		94E7E08114DB32EF00FA3BA4 /* PassTheTorch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassTheTorch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E7E08514DB32EF00FA3BA4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		94E7E08714DB32EF00FA3BA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -118,6 +121,8 @@
 				94E7E09414DB32EF00FA3BA4 /* PassTheTorchAppDelegate.h */,
 				94E7E09514DB32EF00FA3BA4 /* PassTheTorchAppDelegate.m */,
 				94E7E09714DB32EF00FA3BA4 /* MainStoryboard.storyboard */,
+				94A228C614DE3E7600A5AB8C /* CustomizeFlameViewController.h */,
+				94A228C714DE3E7600A5AB8C /* CustomizeFlameViewController.m */,
 				94E7E0A514DB79E600FA3BA4 /* TorchView.h */,
 				94E7E0A614DB79E600FA3BA4 /* TorchView.m */,
 				0E8A260514DCF4B70021C47B /* FlameLayer.h */,
@@ -222,6 +227,7 @@
 				94E7E0AF14DB8F2F00FA3BA4 /* HeadquartersView.m in Sources */,
 				0E8A260714DCF4B80021C47B /* FlameLayer.m in Sources */,
 				94A228C414DE3A8A00A5AB8C /* UserData.m in Sources */,
+				94A228C814DE3E7600A5AB8C /* CustomizeFlameViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

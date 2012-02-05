@@ -16,7 +16,6 @@
 
 #pragma mark Singleton Methods
 + (UserData*)sharedInstance {
-
 	static UserData *_sharedInstance;
 	if(!_sharedInstance) {
 		static dispatch_once_t oncePredicate;
@@ -24,7 +23,6 @@
 			_sharedInstance = [[super allocWithZone:nil] init];
 			});
 		}
-
 		return _sharedInstance;
 }
 

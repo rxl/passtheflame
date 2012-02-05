@@ -8,6 +8,7 @@
 
 #import "FlameLayer.h"
 #import <QuartzCore/QuartzCore.h>
+#import "UserData.h"
 
 @implementation FlameLayer
 {
@@ -41,6 +42,9 @@
         fire.emissionRange = M_PI / 4;
         
         fire.birthRate = 130;
+        if (![UserData sharedInstance].hasFlame) {
+            fire.birthRate = 0;
+        }
         fire.lifetime = 2.3;
         fire.lifetimeRange = 2.0;//1.85;
         

@@ -9,7 +9,7 @@
 #import "HeadquartersViewController.h"
 #import "HeadquartersView.h"
 
-@interface HeadquartersViewController() <HeadquartersViewDataSource>
+@interface HeadquartersViewController()
 @property (nonatomic, weak) IBOutlet HeadquartersView *headquartersView;
 @end
 
@@ -20,7 +20,6 @@
 - (void)setHeadquartersView:(HeadquartersView *)headquartersView
 {
     _headquartersView = headquartersView;
-    self.headquartersView.dataSource = self;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

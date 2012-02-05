@@ -19,11 +19,13 @@
 @synthesize headquartersView = _headquartersView;
 @synthesize bumpConn = _bumpConn;
 @synthesize passFlameButton = _passFlameButton;
+@synthesize purchaseFlameButton = _purchaseFlameButton;
+@synthesize extinguishFlameButton = _extinguishFlameButton;
 
 - (void)setHeadquartersView:(HeadquartersView *)headquartersView
 {
     _headquartersView = headquartersView;
-    self.headquartersView.dataSource = self;
+//    self.headquartersView.dataSource = self; ??
 }
 
 // the user wants to receive a flame
@@ -55,6 +57,19 @@
     }
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    if ([UserData sharedInstance].hasFlame) {
+        self.passFlameButton.titleLabel.text = @"Pass Flame";
+        self.purchaseFlameButton.hidden = YES;
+        self.extinguishFlameButton.hidden = NO;
+    } else {
+        self.passFlameButton.titleLabel.text = @"Receive Flame From Friend";
+        self.purchaseFlameButton.hidden = NO;
+        self.extinguishFlameButton.hidden = YES;
+    }
+}
+
 
 #pragma mark
 #pragma public methods
@@ -69,6 +84,8 @@
 - (void)viewDidUnload {
     _passFlameButton = nil;
     [self setPassFlameButton:nil];
+    [self setPurchaseFlameButton:nil];
+    [self setExtinguishFlameButton:nil];
     [super viewDidUnload];
 }
 @end

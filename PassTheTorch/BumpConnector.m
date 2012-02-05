@@ -9,6 +9,7 @@
 #import "BumpConnector.h"
 #import "HeadquartersViewController.h"
 #import "PassTheTorchViewController.h"
+#import "UserData.h"
 
 @implementation BumpConnector
 
@@ -75,15 +76,24 @@
 	
 	//responseDictionary no contains an Identical dictionary to the one that the other user sent us
 	NSString *userName = [responseDictionary objectForKey:@"USER_ID"];
-    NSString *message = [responseDictionary objectForKey:@"MESSAGE"];
-	
-	NSLog(@"user name is %@, message is %@", userName, message);
-    [self.bumpViewController applyMessage:message];
     
+    if ([UserData sharedInstance].hasFlame) {
+        // do nothing? congratulate on passing flame??
+    } else {
+        NSString *message = [responseDictionary objectForKey:@"MESSAGE"];
+        NSLog(@"user name is %@, message is %@", userName, message);
+        
+        [UserData sharedInstance].hasFlame = YES;
+        [self.bumpViewController applyMessage:message];
+    }
 }
 
 - (void) bumpSessionStartedWith:(Bumper*)otherBumper{
-	[self passFlame:@"fuck you bitch"];
+    if ([UserData sharedInstance].hasFlame) {
+        [self passFlame:@"fuck you bitch"];
+    } else {
+        [self passFlame:@"I have no flame"];
+    }
 }
 
 - (void) bumpSessionEnded:(BumpSessionEndReason)reason {

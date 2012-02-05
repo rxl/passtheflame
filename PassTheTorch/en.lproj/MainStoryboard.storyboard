@@ -33,7 +33,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="gcw-UU-Um3" kind="modal" modalTransitionStyle="flipHorizontal" id="JdB-Cm-Bf3"/>
+                                            <segue destination="gcw-UU-Um3" kind="modal" identifier="Go To Headquarters" modalTransitionStyle="flipHorizontal" id="JdB-Cm-Bf3"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -132,7 +132,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Headquarters" id="z1s-W2-6ci"/>
                     <connections>
+                        <outlet property="extinguishFlameButton" destination="6g4-Js-eCQ" id="FwZ-QO-rB8"/>
                         <outlet property="passFlameButton" destination="0uH-RU-NWU" id="cNQ-eY-SJG"/>
+                        <outlet property="purchaseFlameButton" destination="tz3-rd-G2X" id="ORF-fQ-CwH"/>
                     </connections>
                 </viewController>
             </objects>
@@ -259,38 +261,6 @@
     <resources>
         <image name="london_transparent.png" width="470" height="470"/>
     </resources>
-    <classes>
-        <class className="CustomizeFlameViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomizeFlameViewController.h"/>
-        </class>
-        <class className="HeadquartersView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HeadquartersView.h"/>
-            <relationships>
-                <relationship kind="outlet" name="dataSource"/>
-            </relationships>
-        </class>
-        <class className="HeadquartersViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HeadquartersViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="headquartersView" candidateClass="HeadquartersView"/>
-                <relationship kind="outlet" name="passFlameButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="PassTheTorchViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PassTheTorchViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="torchButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="torchImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="torchView" candidateClass="TorchView"/>
-            </relationships>
-        </class>
-        <class className="TorchView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TorchView.h"/>
-            <relationships>
-                <relationship kind="outlet" name="dataSource"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

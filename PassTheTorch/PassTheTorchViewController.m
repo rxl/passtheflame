@@ -25,7 +25,6 @@
 
 - (void)showHeadquartersView
 {
-    [self performSegueWithIdentifier:@"ShowHeadquarters" sender:self];
     /*if (self.flameIntensity > 0) {
         [self performSegueWithIdentifier:@"ShowHeadquartersForFlamePossesser" sender:self];
     } else {

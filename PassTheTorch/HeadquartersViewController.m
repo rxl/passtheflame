@@ -59,10 +59,11 @@
 {
     if ([UserData sharedInstance].hasFlame) {
         [self.passFlameButton setTitle:@"Pass Flame" forState:UIControlStateNormal];
+        self.headquartersMessage.text = [UserData sharedInstance].flameMessage;
+        [self.headquartersMessage setFont:[UIFont fontWithName:@"Papyrus" size:20.0]];
+        self.headquartersMessage.textColor = [UIColor yellowColor];
         self.purchaseFlameButton.hidden = YES;
         self.extinguishFlameButton.hidden = NO;
-        self.headquartersMessage.text = [UserData sharedInstance].flameMessage;
-        [self.headquartersMessage setFont:[UIFont fontWithName:@"Zapfino" size:20.0]];
     } else {
         [self.passFlameButton setTitle:@"Receive Flame From Friend" forState:UIControlStateNormal];
         self.headquartersMessage.text = @"Oh no... it looks like you don't have a flame. Purchase one or receive one from a friend to light your torch.";

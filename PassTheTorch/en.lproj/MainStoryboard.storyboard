@@ -238,7 +238,7 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="771" y="275"/>
+            <point key="canvasLocation" x="547" y="323"/>
         </scene>
     </scenes>
     <resources>
@@ -279,6 +279,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="WKd-a4-gzW"/>
+        <segue reference="F1v-U1-pgs"/>
     </inferredMetricsTieBreakers>
 </document>

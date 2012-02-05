@@ -9,22 +9,15 @@
 #import "HeadquartersViewController.h"
 #import "HeadquartersView.h"
 
-@interface HeadquartersViewController() <HeadquartersViewDataSource>
+@interface HeadquartersViewController()
 @property (nonatomic, weak) IBOutlet HeadquartersView *headquartersView;
 @end
 
 @implementation HeadquartersViewController
 
-@synthesize hasFlame = _hasFlame;
 @synthesize headquartersView = _headquartersView;
 @synthesize bumpConn = _bumpConn;
 @synthesize passFlameButton = _passFlameButton;
-
-- (void)setHasFlame:(BOOL)hasFlame
-{
-    _hasFlame = hasFlame;
-    [self.headquartersView setNeedsDisplay];
-}
 
 - (void)setHeadquartersView:(HeadquartersView *)headquartersView
 {

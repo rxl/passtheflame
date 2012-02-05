@@ -188,7 +188,7 @@
         <scene sceneID="Jli-D0-Sdn">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ztJ-Wg-kTm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="aiu-q6-lui" sceneMemberID="viewController">
+                <viewController id="aiu-q6-lui" customClass="CustomizeFlameViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AMd-qZ-66s">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -212,7 +212,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="2" kind="modal" modalTransitionStyle="flipHorizontal" id="WKd-a4-gzW"/>
+                                    <segue destination="2" kind="modal" identifier="Create Flame" modalTransitionStyle="flipHorizontal" id="WKd-a4-gzW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -245,6 +245,9 @@
         <image name="london_transparent.png" width="470" height="470"/>
     </resources>
     <classes>
+        <class className="CustomizeFlameViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomizeFlameViewController.h"/>
+        </class>
         <class className="HeadquartersView" superclassName="UIView">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HeadquartersView.h"/>
             <relationships>

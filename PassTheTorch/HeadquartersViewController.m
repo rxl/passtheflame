@@ -75,7 +75,7 @@
 #pragma public methods
 
 // called by the bump api when the messge is received
-- (void)applyMessage:(NSString *)message
+- (void)applyMessage
 {
     [self.bumpConn stopBump];
     [self performSegueWithIdentifier:@"fromHQToTorch" sender:self];

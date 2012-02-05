@@ -50,6 +50,7 @@
 	[bumpObject sendData:dataChunk];
     
 	NSLog(@"sending data %@", dataChunk);
+    [self stopBump];
 	//call this here incase we are late and already have the opponnent roll.
     // do stuff --- set some fields according to the data
 }
@@ -84,15 +85,16 @@
         NSLog(@"user name is %@, message is %@", userName, message);
         
         [UserData sharedInstance].hasFlame = YES;
-        [self.bumpViewController applyMessage:message];
+        [UserData sharedInstance].flameMessage = message;
+        [self.bumpViewController applyMessage];
     }
 }
 
 - (void) bumpSessionStartedWith:(Bumper*)otherBumper{
     if ([UserData sharedInstance].hasFlame) {
-        [self passFlame:@"fuck you bitch"];
+        [self passFlame:[UserData sharedInstance].flameMessage];
     } else {
-        [self passFlame:@"I have no flame"];
+        // ?? do nothing?
     }
 }
 
@@ -115,14 +117,15 @@
 			alertText = @"You have been disconnected.";
 			break;
 	}
-	
+    // ... there's no reason to panic
+	/*
 	if(reason != END_USER_QUIT){ 
 		//if the local user initiated the quit,restarting the app is already being handled
 		//other wise we'll restart here
         // RESTART PROGRAM??? 
 		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Disconnected" message:alertText delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
 		[alert show];
-	}
+	}*/
 }
 
 - (void) bumpSessionFailedToStart:(BumpSessionStartFailedReason)reason {

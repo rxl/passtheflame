@@ -13,6 +13,7 @@
 		0E14FBF614DE3FD100037720 /* BumpAPIAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0E14FBF014DE3FD100037720 /* BumpAPIAssets.bundle */; };
 		0E14FBF714DE3FD100037720 /* BumpConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E14FBF314DE3FD100037720 /* BumpConnector.m */; };
 		0E14FBF814DE3FD100037720 /* libBumpAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E14FBF514DE3FD100037720 /* libBumpAPI.a */; };
+		0E14FC0B14DE8DA700037720 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E14FC0A14DE8DA700037720 /* MapKit.framework */; };
 		0E8A260114DCF1D20021C47B /* fire_particle_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E8A25FD14DCF1D20021C47B /* fire_particle_large.png */; };
 		0E8A260214DCF1D20021C47B /* fire_particle.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E8A25FE14DCF1D20021C47B /* fire_particle.png */; };
 		0E8A260314DCF1D20021C47B /* london_transparent_front.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E8A25FF14DCF1D20021C47B /* london_transparent_front.png */; };
@@ -48,6 +49,7 @@
 		0E14FBF314DE3FD100037720 /* BumpConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BumpConnector.m; path = PassTheTorch/BumpConnector.m; sourceTree = "<group>"; };
 		0E14FBF414DE3FD100037720 /* Bumper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bumper.h; path = PassTheTorch/Bumper.h; sourceTree = "<group>"; };
 		0E14FBF514DE3FD100037720 /* libBumpAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBumpAPI.a; path = PassTheTorch/libBumpAPI.a; sourceTree = "<group>"; };
+		0E14FC0A14DE8DA700037720 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0E8A25FD14DCF1D20021C47B /* fire_particle_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire_particle_large.png; sourceTree = "<group>"; };
 		0E8A25FE14DCF1D20021C47B /* fire_particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire_particle.png; sourceTree = "<group>"; };
 		0E8A25FF14DCF1D20021C47B /* london_transparent_front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = london_transparent_front.png; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E14FC0B14DE8DA700037720 /* MapKit.framework in Frameworks */,
 				0E14FBEA14DDC1F000037720 /* CoreLocation.framework in Frameworks */,
 				0E14FBE814DDC1E800037720 /* AudioToolbox.framework in Frameworks */,
 				0E14FBE614DDC1DC00037720 /* libsqlite3.dylib in Frameworks */,
@@ -131,6 +134,7 @@
 		94E7E07614DB32EF00FA3BA4 = {
 			isa = PBXGroup;
 			children = (
+				0E14FC0A14DE8DA700037720 /* MapKit.framework */,
 				0E14FBDB14DDC18F00037720 /* BumpAPI */,
 				94E7E08B14DB32EF00FA3BA4 /* PassTheTorch */,
 				94E7E08414DB32EF00FA3BA4 /* Frameworks */,

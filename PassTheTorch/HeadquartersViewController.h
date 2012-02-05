@@ -20,6 +20,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *extinguishFlameButton;
 @property (weak, nonatomic) IBOutlet UILabel *headquartersMessage;
 
-- (void)applyMessage:(NSString *)message;
+- (void)applyMessage;
 
 @end

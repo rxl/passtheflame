@@ -60,16 +60,15 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     if ([UserData sharedInstance].hasFlame) {
-        self.passFlameButton.titleLabel.text = @"Pass Flame";
+        [self.passFlameButton setTitle:@"Pass Flame" forState:UIControlStateNormal];
         self.purchaseFlameButton.hidden = YES;
         self.extinguishFlameButton.hidden = NO;
     } else {
-        self.passFlameButton.titleLabel.text = @"Receive Flame From Friend";
+        [self.passFlameButton setTitle:@"Receive Flame From Friend" forState:UIControlStateNormal];
         self.purchaseFlameButton.hidden = NO;
         self.extinguishFlameButton.hidden = YES;
     }
 }
-
 
 #pragma mark
 #pragma public methods

@@ -8,6 +8,7 @@
 
 #import "HeadquartersViewController.h"
 #import "HeadquartersView.h"
+#import "UserData.h"
 
 @interface HeadquartersViewController()
 @property (nonatomic, weak) IBOutlet HeadquartersView *headquartersView;
@@ -40,12 +41,18 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    //return (interfaceOrientation == UIInterfaceOrientationPortrait);
-    return NO;
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
 -(void)applicationWillTerminate:(UIApplication *)application{
 	[self.bumpConn stopBump];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"Extinguish Flame"]) {
+        [UserData sharedInstance].hasFlame = NO;
+    }
 }
 
 
@@ -55,6 +62,7 @@
 // called by the bump api when the messge is received
 - (void)applyMessage:(NSString *)message
 {
+    [self.bumpConn stopBump];
     [self performSegueWithIdentifier:@"fromHQToTorch" sender:self];
 }
 

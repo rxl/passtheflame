@@ -50,7 +50,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-104" y="535"/>
+            <point key="canvasLocation" x="1250" y="845"/>
         </scene>
         <scene sceneID="coY-Pe-loZ">
             <objects>
@@ -61,7 +61,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tz3-rd-G2X">
-                                <rect key="frame" x="20" y="175" width="280" height="37"/>
+                                <rect key="frame" x="20" y="199" width="280" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Purchase Flame">
@@ -76,7 +76,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0uH-RU-NWU">
-                                <rect key="frame" x="20" y="253" width="280" height="37"/>
+                                <rect key="frame" x="20" y="148" width="280" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Receive Flame From Friend">
@@ -112,6 +112,21 @@
                                     <segue destination="2" kind="modal" identifier="fromHQToTorch" modalTransitionStyle="flipHorizontal" id="N8A-qM-qZI"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6g4-Js-eCQ">
+                                <rect key="frame" x="20" y="251" width="278" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Extinguish Flame">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2" kind="modal" identifier="Extinguish Flame" modalTransitionStyle="flipHorizontal" id="3G9-eY-H4v"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -121,7 +136,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1246" y="275"/>
+            <point key="canvasLocation" x="874" y="183"/>
         </scene>
         <scene sceneID="hsr-1V-vDr">
             <objects>
@@ -238,7 +253,7 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="547" y="323"/>
+            <point key="canvasLocation" x="249" y="387"/>
         </scene>
     </scenes>
     <resources>
@@ -281,7 +296,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="F1v-U1-pgs"/>
-    </inferredMetricsTieBreakers>
 </document>

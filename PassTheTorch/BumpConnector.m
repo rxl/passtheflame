@@ -79,6 +79,7 @@
 	
 	NSLog(@"user name is %@, message is %@", userName, message);
     [self.bumpViewController applyMessage:message];
+    
 }
 
 - (void) bumpSessionStartedWith:(Bumper*)otherBumper{

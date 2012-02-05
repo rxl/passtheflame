@@ -21,6 +21,7 @@
 @synthesize passFlameButton = _passFlameButton;
 @synthesize purchaseFlameButton = _purchaseFlameButton;
 @synthesize extinguishFlameButton = _extinguishFlameButton;
+@synthesize headquartersMessage = _headquartersMessage;
 
 - (void)setHeadquartersView:(HeadquartersView *)headquartersView
 {
@@ -29,15 +30,11 @@
 }
 
 // the user wants to receive a flame
-- (IBAction)pressReceiveFlame:(id)sender {
+- (IBAction)pressReceiveFlame:(id)sender
+{
 	self.bumpConn = [[BumpConnector alloc] init];
 	[self.bumpConn setBumpViewController:self];
 	[self.bumpConn startBump];
-}
-
-- (float)hasFlameForHeadquartersView:(HeadquartersView *)sender
-{
-    return self.hasFlame;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -46,7 +43,8 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
--(void)applicationWillTerminate:(UIApplication *)application{
+-(void)applicationWillTerminate:(UIApplication *)application
+{
 	[self.bumpConn stopBump];
 }
 
@@ -63,8 +61,11 @@
         [self.passFlameButton setTitle:@"Pass Flame" forState:UIControlStateNormal];
         self.purchaseFlameButton.hidden = YES;
         self.extinguishFlameButton.hidden = NO;
+        self.headquartersMessage.text = [UserData sharedInstance].flameMessage;
+        [self.headquartersMessage setFont:[UIFont fontWithName:@"Zapfino" size:20.0]];
     } else {
         [self.passFlameButton setTitle:@"Receive Flame From Friend" forState:UIControlStateNormal];
+        self.headquartersMessage.text = @"Oh no... it looks like you don't have a flame. Purchase one or receive one from a friend to light your torch.";
         self.purchaseFlameButton.hidden = NO;
         self.extinguishFlameButton.hidden = YES;
     }
@@ -85,6 +86,7 @@
     [self setPassFlameButton:nil];
     [self setPurchaseFlameButton:nil];
     [self setExtinguishFlameButton:nil];
+    [self setHeadquartersMessage:nil];
     [super viewDidUnload];
 }
 @end

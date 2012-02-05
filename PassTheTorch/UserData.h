@@ -12,9 +12,11 @@
 
 @interface UserData : NSObject {
     BOOL hasFlame;
+    NSString *flameMessage;
 }
 
 @property (nonatomic, assign) BOOL hasFlame;
+@property (nonatomic, retain) NSString *flameMessage;
 
 + (UserData*) sharedInstance;
 @end

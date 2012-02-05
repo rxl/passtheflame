@@ -13,6 +13,7 @@
 @implementation UserData
 
 @synthesize hasFlame;
+@synthesize flameMessage;
 
 #pragma mark Singleton Methods
 + (UserData*)sharedInstance {
@@ -29,6 +30,7 @@
 - (id)init {
     if (self = [super init]) {
         hasFlame = NO;
+        flameMessage = [[NSString alloc] initWithString:@"This is my flame"];
     }
     return self;
 }

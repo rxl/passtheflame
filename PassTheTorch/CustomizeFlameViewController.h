@@ -10,4 +10,6 @@
 
 @interface CustomizeFlameViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextView *flameMessage;
+
 @end

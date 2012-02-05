@@ -14,11 +14,11 @@
     BumpConnector *bumpConn;
 }
 
-@property (nonatomic) BOOL hasFlame; // YES if person has flame, NO if person does not
 @property (nonatomic, retain) BumpConnector *bumpConn;
 @property (weak, nonatomic) IBOutlet UIButton *passFlameButton;
 @property (weak, nonatomic) IBOutlet UIButton *purchaseFlameButton;
 @property (weak, nonatomic) IBOutlet UIButton *extinguishFlameButton;
+@property (weak, nonatomic) IBOutlet UILabel *headquartersMessage;
 
 - (void)applyMessage:(NSString *)message;
 

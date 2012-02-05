@@ -13,6 +13,7 @@
 		0E8A260414DCF1D20021C47B /* london_transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E8A260014DCF1D20021C47B /* london_transparent.png */; };
 		0E8A260714DCF4B80021C47B /* FlameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8A260614DCF4B70021C47B /* FlameLayer.m */; };
 		0E8A260914DCF5960021C47B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8A260814DCF5960021C47B /* QuartzCore.framework */; };
+		94A228C414DE3A8A00A5AB8C /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A228C314DE3A8A00A5AB8C /* UserData.m */; };
 		94E7E08614DB32EF00FA3BA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E7E08514DB32EF00FA3BA4 /* UIKit.framework */; };
 		94E7E08814DB32EF00FA3BA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E7E08714DB32EF00FA3BA4 /* Foundation.framework */; };
 		94E7E08A14DB32EF00FA3BA4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E7E08914DB32EF00FA3BA4 /* CoreGraphics.framework */; };
@@ -23,7 +24,6 @@
 		94E7E09C14DB32EF00FA3BA4 /* PassTheTorchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E7E09B14DB32EF00FA3BA4 /* PassTheTorchViewController.m */; };
 		94E7E0A714DB79E600FA3BA4 /* TorchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E7E0A614DB79E600FA3BA4 /* TorchView.m */; };
 		94E7E0AB14DB8E3A00FA3BA4 /* HeadquartersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E7E0A914DB8E3A00FA3BA4 /* HeadquartersViewController.m */; };
-		94E7E0AC14DB8E3A00FA3BA4 /* HeadquartersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94E7E0AA14DB8E3A00FA3BA4 /* HeadquartersViewController.xib */; };
 		94E7E0AF14DB8F2F00FA3BA4 /* HeadquartersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E7E0AE14DB8F2F00FA3BA4 /* HeadquartersView.m */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +35,8 @@
 		0E8A260514DCF4B70021C47B /* FlameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlameLayer.h; sourceTree = "<group>"; };
 		0E8A260614DCF4B70021C47B /* FlameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlameLayer.m; sourceTree = "<group>"; };
 		0E8A260814DCF5960021C47B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		94A228C214DE3A8A00A5AB8C /* UserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
+		94A228C314DE3A8A00A5AB8C /* UserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserData.m; sourceTree = "<group>"; };
 		94E7E08114DB32EF00FA3BA4 /* PassTheTorch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassTheTorch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E7E08514DB32EF00FA3BA4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		94E7E08714DB32EF00FA3BA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -52,7 +54,6 @@
 		94E7E0A614DB79E600FA3BA4 /* TorchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorchView.m; sourceTree = "<group>"; };
 		94E7E0A814DB8E3A00FA3BA4 /* HeadquartersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadquartersViewController.h; sourceTree = "<group>"; };
 		94E7E0A914DB8E3A00FA3BA4 /* HeadquartersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadquartersViewController.m; sourceTree = "<group>"; };
-		94E7E0AA14DB8E3A00FA3BA4 /* HeadquartersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadquartersViewController.xib; sourceTree = "<group>"; };
 		94E7E0AD14DB8F2F00FA3BA4 /* HeadquartersView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadquartersView.h; sourceTree = "<group>"; };
 		94E7E0AE14DB8F2F00FA3BA4 /* HeadquartersView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadquartersView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,6 +123,8 @@
 				0E8A260514DCF4B70021C47B /* FlameLayer.h */,
 				0E8A260614DCF4B70021C47B /* FlameLayer.m */,
 				94E7E09A14DB32EF00FA3BA4 /* PassTheTorchViewController.h */,
+				94A228C214DE3A8A00A5AB8C /* UserData.h */,
+				94A228C314DE3A8A00A5AB8C /* UserData.m */,
 				94E7E09B14DB32EF00FA3BA4 /* PassTheTorchViewController.m */,
 				94E7E0AD14DB8F2F00FA3BA4 /* HeadquartersView.h */,
 				94E7E0AE14DB8F2F00FA3BA4 /* HeadquartersView.m */,
@@ -129,7 +132,6 @@
 				94E7E08C14DB32EF00FA3BA4 /* Supporting Files */,
 				94E7E0A814DB8E3A00FA3BA4 /* HeadquartersViewController.h */,
 				94E7E0A914DB8E3A00FA3BA4 /* HeadquartersViewController.m */,
-				94E7E0AA14DB8E3A00FA3BA4 /* HeadquartersViewController.xib */,
 			);
 			path = PassTheTorch;
 			sourceTree = "<group>";
@@ -198,7 +200,6 @@
 			files = (
 				94E7E09014DB32EF00FA3BA4 /* InfoPlist.strings in Resources */,
 				94E7E09914DB32EF00FA3BA4 /* MainStoryboard.storyboard in Resources */,
-				94E7E0AC14DB8E3A00FA3BA4 /* HeadquartersViewController.xib in Resources */,
 				0E8A260114DCF1D20021C47B /* fire_particle_large.png in Resources */,
 				0E8A260214DCF1D20021C47B /* fire_particle.png in Resources */,
 				0E8A260314DCF1D20021C47B /* london_transparent_front.png in Resources */,
@@ -220,6 +221,7 @@
 				94E7E0AB14DB8E3A00FA3BA4 /* HeadquartersViewController.m in Sources */,
 				94E7E0AF14DB8F2F00FA3BA4 /* HeadquartersView.m in Sources */,
 				0E8A260714DCF4B80021C47B /* FlameLayer.m in Sources */,
+				94A228C414DE3A8A00A5AB8C /* UserData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

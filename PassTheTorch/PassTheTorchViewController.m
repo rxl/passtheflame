@@ -35,13 +35,6 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"ShowHeadquarters"]) {
-        if (self.flameIntensity > 0) {
-            [segue.destinationViewController setHasFlame:YES];
-        } else {
-            [segue.destinationViewController setHasFlame:NO];
-        }
-    }
     //[self.navigationController setNavigationBarHidden:NO animated:NO];
     /*if ([segue.identifier isEqualToString:@"ShowHeadquartersForFlamePossessor"]) {
         [segue.destinationViewController setHasFlame:YES];

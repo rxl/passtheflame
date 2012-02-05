@@ -15,24 +15,12 @@
 
 @implementation HeadquartersViewController
 
-@synthesize hasFlame = _hasFlame;
 @synthesize headquartersView = _headquartersView;
-
-- (void)setHasFlame:(BOOL)hasFlame
-{
-    _hasFlame = hasFlame;
-    [self.headquartersView setNeedsDisplay];
-}
 
 - (void)setHeadquartersView:(HeadquartersView *)headquartersView
 {
     _headquartersView = headquartersView;
     self.headquartersView.dataSource = self;
-}
-
-- (float)hasFlameForHeadquartersView:(HeadquartersView *)sender
-{
-    return self.hasFlame;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

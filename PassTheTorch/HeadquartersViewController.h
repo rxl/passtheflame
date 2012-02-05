@@ -10,6 +10,4 @@
 
 @interface HeadquartersViewController : UIViewController
 
-@property (nonatomic) BOOL hasFlame; // YES if person has flame, NO if person does not
-
 @end

@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CustomizeFlameViewController : UIViewController
+@interface CustomizeFlameViewController : UIViewController {
+    UITextView *flameMessage;
+}
 
 @property (weak, nonatomic) IBOutlet UITextView *flameMessage;
 

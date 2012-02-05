@@ -59,7 +59,8 @@
 {
     if ([UserData sharedInstance].hasFlame) {
         self.headquartersMessage.text = [UserData sharedInstance].flameMessage;
-        [self.headquartersMessage setFont:[UIFont fontWithName:@"Zapfino" size:20.0]];
+        [self.headquartersMessage setFont:[UIFont fontWithName:@"Papyrus" size:20.0]];
+        self.headquartersMessage.textColor = [UIColor yellowColor];
         self.passFlameButton.titleLabel.text = @"Pass Flame";
         self.purchaseFlameButton.hidden = YES;
         self.extinguishFlameButton.hidden = NO;

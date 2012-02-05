@@ -20,6 +20,21 @@
     }
 }
 
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range 
+ replacementText:(NSString *)text
+{
+    // Any new character added is passed in as the "text" parameter
+    if ([text isEqualToString:@"\n"]) {
+        // Be sure to test for equality using the "isEqualToString" message
+        [textView resignFirstResponder];
+        
+        // Return FALSE so that the final '\n' character doesn't get added
+        return FALSE;
+    }
+    // For any other character return TRUE so that the text gets added to the view
+    return TRUE;
+}
+
 - (void)viewWillAppear:(BOOL)animated
 {
     if ([UserData sharedInstance].flameMessage == (id)[NSNull null] || [UserData sharedInstance].flameMessage.length == 0) {
@@ -27,11 +42,6 @@
     } else {
         self.flameMessage.text = [UserData sharedInstance].flameMessage;
     }
-}
-
-- (void)setFlameMessage:(UITextView *)flameMessage
-{
-    _flameMessage = flameMessage;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
